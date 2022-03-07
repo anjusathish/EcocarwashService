@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppliedLeaveHeaderView" rowHeight="35" id="KGk-i7-Jjw" customClass="AppliedLeaveHeaderView" customModule="Eco_Car_Wash_Drive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="35"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applied leaves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkx-XB-3er">
+                        <rect key="frame" x="15" y="5" width="386" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Ubo-tr-Ohs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pkx-XB-3er" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5Zd-IX-B5J"/>
+                    <constraint firstItem="Pkx-XB-3er" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Av4-GK-vO1"/>
+                    <constraint firstAttribute="trailing" secondItem="Pkx-XB-3er" secondAttribute="trailing" constant="15" id="X0b-pj-eUt"/>
+                    <constraint firstAttribute="bottom" secondItem="Pkx-XB-3er" secondAttribute="bottom" constant="5" id="XSw-ko-qck"/>
+                    <constraint firstItem="Pkx-XB-3er" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gcz-aC-I5M"/>
+                    <constraint firstItem="Pkx-XB-3er" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="i55-Fm-dhI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="207.24637681159422" y="121.54017857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

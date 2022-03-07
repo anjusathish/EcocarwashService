@@ -1,0 +1,1565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A31838B277DA7DE003319D1 /* CreateCleanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A31838A277DA7DE003319D1 /* CreateCleanerViewController.swift */; };
+		2A32E76D2778735D00F21BFE /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E76C2778735D00F21BFE /* ProfileModel.swift */; };
+		2A32E76F277873A300F21BFE /* ProfileServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E76E277873A300F21BFE /* ProfileServiceManager.swift */; };
+		2A32E771277873D600F21BFE /* ProfileServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E770277873D600F21BFE /* ProfileServiceHelper.swift */; };
+		2A32E773277873EA00F21BFE /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E772277873EA00F21BFE /* ProfileViewModel.swift */; };
+		2A32E7752778894900F21BFE /* LeaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E7742778894900F21BFE /* LeaveModel.swift */; };
+		2A32E7772778899000F21BFE /* LeaveServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E7762778899000F21BFE /* LeaveServiceManager.swift */; };
+		2A32E779277889BF00F21BFE /* LeaveServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E778277889BF00F21BFE /* LeaveServiceHelper.swift */; };
+		2A32E77B277889F200F21BFE /* LeaveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E77A277889F200F21BFE /* LeaveViewModel.swift */; };
+		2A32E77D277C257300F21BFE /* Cleaner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A32E77C277C257300F21BFE /* Cleaner.storyboard */; };
+		2A32E77F277C26D600F21BFE /* DesignFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E77E277C26D600F21BFE /* DesignFunctions.swift */; };
+		2A32E782277C279D00F21BFE /* CleanerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E781277C279D00F21BFE /* CleanerListViewController.swift */; };
+		2A32E785277C2E2C00F21BFE /* CleanerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E783277C2E2C00F21BFE /* CleanerCell.swift */; };
+		2A32E786277C2E2C00F21BFE /* CleanerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A32E784277C2E2C00F21BFE /* CleanerCell.xib */; };
+		2A32E789277C2FF700F21BFE /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E788277C2FF700F21BFE /* RatingView.swift */; };
+		2A32E78B277C7B5700F21BFE /* CleanerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E78A277C7B5700F21BFE /* CleanerModel.swift */; };
+		2A32E78D277C7C0000F21BFE /* CleanerServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E78C277C7C0000F21BFE /* CleanerServiceManager.swift */; };
+		2A32E78F277C7C6800F21BFE /* CleanerServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E78E277C7C6800F21BFE /* CleanerServiceHelper.swift */; };
+		2A32E791277C7C9C00F21BFE /* CleanerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A32E790277C7C9C00F21BFE /* CleanerViewModel.swift */; };
+		2A3827A42704B0A5002F1932 /* ActiveServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3827A22704B0A5002F1932 /* ActiveServicesCollectionViewCell.swift */; };
+		2A3827A52704B0A5002F1932 /* ActiveServicesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3827A32704B0A5002F1932 /* ActiveServicesCollectionViewCell.xib */; };
+		2A3827A82704B0C3002F1932 /* UpcomingServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3827A62704B0C3002F1932 /* UpcomingServicesCollectionViewCell.swift */; };
+		2A3827A92704B0C3002F1932 /* UpcomingServicesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3827A72704B0C3002F1932 /* UpcomingServicesCollectionViewCell.xib */; };
+		2A3827AB2707341E002F1932 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3827AA2707341D002F1932 /* AppointmentsViewController.swift */; };
+		2A3827AE270735B8002F1932 /* AppointmentDurationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3827AC270735B8002F1932 /* AppointmentDurationTableViewCell.swift */; };
+		2A3827AF270735B8002F1932 /* AppointmentDurationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3827AD270735B8002F1932 /* AppointmentDurationTableViewCell.xib */; };
+		2A3827B227073734002F1932 /* AppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3827B027073734002F1932 /* AppointmentTableViewCell.swift */; };
+		2A3827B327073734002F1932 /* AppointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A3827B127073734002F1932 /* AppointmentTableViewCell.xib */; };
+		2A47E86426E2371000FDABF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47E86326E2371000FDABF0 /* AppDelegate.swift */; };
+		2A47E86626E2371000FDABF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47E86526E2371000FDABF0 /* SceneDelegate.swift */; };
+		2A47E86826E2371000FDABF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47E86726E2371000FDABF0 /* LoginViewController.swift */; };
+		2A47E86B26E2371000FDABF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A47E86926E2371000FDABF0 /* Main.storyboard */; };
+		2A47E86E26E2371000FDABF0 /* EcoCarWash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A47E86C26E2371000FDABF0 /* EcoCarWash.xcdatamodeld */; };
+		2A47E87026E2371300FDABF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A47E86F26E2371300FDABF0 /* Assets.xcassets */; };
+		2A47E87326E2371300FDABF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A47E87126E2371300FDABF0 /* LaunchScreen.storyboard */; };
+		2A47E87E26E2371400FDABF0 /* EcoCarWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47E87D26E2371400FDABF0 /* EcoCarWashTests.swift */; };
+		2A47E88926E2371400FDABF0 /* EcoCarWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47E88826E2371400FDABF0 /* EcoCarWashUITests.swift */; };
+		2A47E8A426E878C500FDABF0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A47E8A326E878C500FDABF0 /* Utilities.swift */; };
+		2A47E8BB26E886ED00FDABF0 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A47E8BA26E886ED00FDABF0 /* Color.xcassets */; };
+		2A49BBF4270F1BF100C61CE8 /* AppliedLeavesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49BBF2270F1BF000C61CE8 /* AppliedLeavesTableViewCell.swift */; };
+		2A49BBF5270F1BF100C61CE8 /* AppliedLeavesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A49BBF3270F1BF000C61CE8 /* AppliedLeavesTableViewCell.xib */; };
+		2A52B3A4278AB595000A9C9C /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52B3A3278AB595000A9C9C /* ServiceConfigurationViewController.swift */; };
+		2A52B3A7278AB5D2000A9C9C /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A52B3A5278AB5D2000A9C9C /* ServiceTableViewCell.xib */; };
+		2A52B3A8278AB5D2000A9C9C /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52B3A6278AB5D2000A9C9C /* ServiceTableViewCell.swift */; };
+		2A52B3AA278ABAAC000A9C9C /* ServiceTimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52B3A9278ABAAC000A9C9C /* ServiceTimingViewController.swift */; };
+		2A52B3AC278ABD22000A9C9C /* ServiceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52B3AB278ABD22000A9C9C /* ServiceTypeViewController.swift */; };
+		2A52B3AE278DA068000A9C9C /* AppointmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A52B3AD278DA068000A9C9C /* AppointmentManager.swift */; };
+		2A59146927A0F15500A59C5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A59146827A0F15500A59C5E /* GoogleService-Info.plist */; };
+		2A59146D27A1373600A59C5E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59146C27A1373600A59C5E /* LocationManager.swift */; };
+		2A5FBA12270DB4DA00594D7B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FBA11270DB4DA00594D7B /* ProfileViewController.swift */; };
+		2A5FBA14270DEA2500594D7B /* LeaveApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5FBA13270DEA2400594D7B /* LeaveApplicationViewController.swift */; };
+		2A65D65027155FC600D15E6C /* LeaveApplicationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65D64E27155FC600D15E6C /* LeaveApplicationHeaderView.swift */; };
+		2A65D65127155FC600D15E6C /* LeaveApplicationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A65D64F27155FC600D15E6C /* LeaveApplicationHeaderView.xib */; };
+		2A65D6542715643800D15E6C /* AppliedLeaveHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65D6522715643800D15E6C /* AppliedLeaveHeaderView.swift */; };
+		2A65D6552715643800D15E6C /* AppliedLeaveHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A65D6532715643800D15E6C /* AppliedLeaveHeaderView.xib */; };
+		2A65D65727156BC100D15E6C /* LeaveStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65D65627156BC100D15E6C /* LeaveStatusViewController.swift */; };
+		2AACF6942786BF100059F80C /* AppointmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACF6932786BF100059F80C /* AppointmentDetailViewController.swift */; };
+		2AACF6972786C0120059F80C /* ServiceTypeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACF6952786C0120059F80C /* ServiceTypeHeaderCell.swift */; };
+		2AACF6982786C0120059F80C /* ServiceTypeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AACF6962786C0120059F80C /* ServiceTypeHeaderCell.xib */; };
+		2AB74BE726EA68DD00B0D10F /* SlideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AC226EA68D700B0D10F /* SlideMenuTableViewCell.swift */; };
+		2AB74BE826EA68DD00B0D10F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AC426EA68D700B0D10F /* UserManager.swift */; };
+		2AB74BEB26EA68DD00B0D10F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AC826EA68D800B0D10F /* Constants.swift */; };
+		2AB74BFD26EA68DD00B0D10F /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74ADE26EA68D800B0D10F /* StackViewExtension.swift */; };
+		2AB74BFE26EA68DD00B0D10F /* DeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74ADF26EA68D800B0D10F /* DeviceExtension.swift */; };
+		2AB74BFF26EA68DD00B0D10F /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE026EA68D800B0D10F /* FontExtension.swift */; };
+		2AB74C0026EA68DD00B0D10F /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE126EA68D800B0D10F /* ArrayExtension.swift */; };
+		2AB74C0126EA68DD00B0D10F /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE226EA68D800B0D10F /* ImageExtension.swift */; };
+		2AB74C0226EA68DD00B0D10F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE326EA68D800B0D10F /* DesignableView.swift */; };
+		2AB74C0326EA68DD00B0D10F /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE426EA68D800B0D10F /* ButtonExtension.swift */; };
+		2AB74C0426EA68DD00B0D10F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE526EA68D800B0D10F /* ViewExtension.swift */; };
+		2AB74C0526EA68DD00B0D10F /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE626EA68D800B0D10F /* ColorExtension.swift */; };
+		2AB74C0626EA68DD00B0D10F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE726EA68D800B0D10F /* StringExtension.swift */; };
+		2AB74C0726EA68DD00B0D10F /* TextfieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE826EA68D800B0D10F /* TextfieldExtension.swift */; };
+		2AB74C0826EA68DD00B0D10F /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AE926EA68D800B0D10F /* DictionaryExtension.swift */; };
+		2AB74C0926EA68DD00B0D10F /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AEA26EA68D800B0D10F /* TableViewExtension.swift */; };
+		2AB74C0A26EA68DD00B0D10F /* CalendarFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AEC26EA68D800B0D10F /* CalendarFlowLayout.swift */; };
+		2AB74C0B26EA68DD00B0D10F /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AED26EA68D800B0D10F /* CalendarHeaderView.swift */; };
+		2AB74C0C26EA68DD00B0D10F /* CalendarView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AEE26EA68D800B0D10F /* CalendarView+Extensions.swift */; };
+		2AB74C0D26EA68DD00B0D10F /* CalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AEF26EA68D800B0D10F /* CalendarDayCell.swift */; };
+		2AB74C0E26EA68DD00B0D10F /* CalendarView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AF026EA68D800B0D10F /* CalendarView+Style.swift */; };
+		2AB74C0F26EA68DD00B0D10F /* CalendarView+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AF126EA68D900B0D10F /* CalendarView+Delegate.swift */; };
+		2AB74C1026EA68DD00B0D10F /* EventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AF226EA68D900B0D10F /* EventsManager.swift */; };
+		2AB74C1126EA68DD00B0D10F /* CalendarView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AF326EA68D900B0D10F /* CalendarView+DataSource.swift */; };
+		2AB74C1226EA68DD00B0D10F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74AF426EA68D900B0D10F /* CalendarView.swift */; };
+		2AB74C7026EA68DD00B0D10F /* CustomPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B5C26EA68D900B0D10F /* CustomPicker.swift */; };
+		2AB74C8126EA68DD00B0D10F /* CTGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7126EA68D900B0D10F /* CTGradientView.swift */; };
+		2AB74C8226EA68DD00B0D10F /* ChildDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7226EA68D900B0D10F /* ChildDropDown.swift */; };
+		2AB74C8326EA68DD00B0D10F /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7326EA68D900B0D10F /* KDCircularProgress.swift */; };
+		2AB74C8426EA68DD00B0D10F /* AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7426EA68D900B0D10F /* AttachmentView.swift */; };
+		2AB74C8526EA68DD00B0D10F /* CTSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7526EA68D900B0D10F /* CTSegmentControl.swift */; };
+		2AB74C8626EA68DD00B0D10F /* ChildDropDown.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB74B7626EA68D900B0D10F /* ChildDropDown.xib */; };
+		2AB74C8726EA68DD00B0D10F /* CTDayCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7726EA68D900B0D10F /* CTDayCalender.swift */; };
+		2AB74C8826EA68DD00B0D10F /* CTDayWeekCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7826EA68D900B0D10F /* CTDayWeekCalender.swift */; };
+		2AB74C8926EA68DD00B0D10F /* CTSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7926EA68D900B0D10F /* CTSwitch.swift */; };
+		2AB74C8A26EA68DD00B0D10F /* CTCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7A26EA68D900B0D10F /* CTCustomButton.swift */; };
+		2AB74C8B26EA68DD00B0D10F /* CTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7B26EA68D900B0D10F /* CTButton.swift */; };
+		2AB74C8C26EA68DD00B0D10F /* CTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7C26EA68D900B0D10F /* CTView.swift */; };
+		2AB74C8E26EA68DD00B0D10F /* CTStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7E26EA68D900B0D10F /* CTStepper.swift */; };
+		2AB74C8F26EA68DD00B0D10F /* CTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74B7F26EA68D900B0D10F /* CTTextField.swift */; };
+		2AB74CB326EA68DE00B0D10F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BA626EA68DB00B0D10F /* MBProgressHUD.m */; };
+		2AB74CB426EA68DE00B0D10F /* UITableViewCell+CellShadows.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BA726EA68DB00B0D10F /* UITableViewCell+CellShadows.m */; };
+		2AB74CB526EA68DE00B0D10F /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BAA26EA68DB00B0D10F /* Rechability.swift */; };
+		2AB74CB626EA68DE00B0D10F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AB74BAC26EA68DB00B0D10F /* LICENSE */; };
+		2AB74CB726EA68DE00B0D10F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2AB74BAD26EA68DB00B0D10F /* README.md */; };
+		2AB74CB826EA68DE00B0D10F /* STPopupControllerTransitioningSlideVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BAF26EA68DB00B0D10F /* STPopupControllerTransitioningSlideVertical.m */; };
+		2AB74CB926EA68DE00B0D10F /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BB126EA68DB00B0D10F /* STPopupNavigationBar.m */; };
+		2AB74CBA26EA68DE00B0D10F /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BB326EA68DB00B0D10F /* STPopupLeftBarItem.m */; };
+		2AB74CBB26EA68DE00B0D10F /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BB426EA68DB00B0D10F /* UIViewController+STPopup.m */; };
+		2AB74CBC26EA68DE00B0D10F /* STPopupControllerTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BB526EA68DB00B0D10F /* STPopupControllerTransitioningFade.m */; };
+		2AB74CBD26EA68DE00B0D10F /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BB626EA68DB00B0D10F /* STPopupController.m */; };
+		2AB74CBE26EA68DE00B0D10F /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BB726EA68DB00B0D10F /* UIResponder+STPopup.m */; };
+		2AB74CBF26EA68DE00B0D10F /* SlideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AB74BBF26EA68DB00B0D10F /* SlideMenuTableViewCell.xib */; };
+		2AB74CCC26EA68DE00B0D10F /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB74BCD26EA68DC00B0D10F /* ServiceHelper.swift */; };
+		2AB9FDD126EB228C0022EE74 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9FDD026EB228C0022EE74 /* RootViewController.swift */; };
+		2AB9FDD426EB233E0022EE74 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9FDD326EB233E0022EE74 /* DashboardViewController.swift */; };
+		2AB9FDD626EB23910022EE74 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AB9FDD526EB23910022EE74 /* Dashboard.storyboard */; };
+		2AB9FDD826EB26790022EE74 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9FDD726EB26790022EE74 /* MenuViewController.swift */; };
+		2AB9FDDA26EB69A70022EE74 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9FDD926EB69A70022EE74 /* TutorialViewController.swift */; };
+		2AB9FDF926EBEF740022EE74 /* MobileNoVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB9FDF826EBEF740022EE74 /* MobileNoVerificationViewController.swift */; };
+		2AD68CAC2774A23900020DB2 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD68CAB2774A23900020DB2 /* UserDetails.swift */; };
+		2AD68CAE2774A25400020DB2 /* SignupServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD68CAD2774A25400020DB2 /* SignupServiceManager.swift */; };
+		2AD68CB02774A26300020DB2 /* LoginServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD68CAF2774A26300020DB2 /* LoginServiceHelper.swift */; };
+		2AD68CB22774A27000020DB2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD68CB12774A27000020DB2 /* LoginViewModel.swift */; };
+		2AD68CB42774A4CE00020DB2 /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD68CB32774A4CE00020DB2 /* UserDefaultsExtensions.swift */; };
+		2ADD1C5E2785BEE6001ABC3B /* BookedAppointmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD1C5C2785BEE5001ABC3B /* BookedAppointmentCell.xib */; };
+		2ADD1C5F2785BEE6001ABC3B /* BookedAppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD1C5D2785BEE6001ABC3B /* BookedAppointmentCell.swift */; };
+		2ADD1C622785BFBD001ABC3B /* AppointmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD1C612785BFBD001ABC3B /* AppointmentListViewController.swift */; };
+		2ADD1C642785C05B001ABC3B /* Appointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD1C632785C05B001ABC3B /* Appointment.storyboard */; };
+		2ADD1C6627869CBA001ABC3B /* AppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD1C6527869CBA001ABC3B /* AppointmentModel.swift */; };
+		2ADD1C6827869CD3001ABC3B /* AppointmentServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD1C6727869CD3001ABC3B /* AppointmentServiceManager.swift */; };
+		2ADD1C6A27869CF5001ABC3B /* AppointmentServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD1C6927869CF5001ABC3B /* AppointmentServiceHelper.swift */; };
+		2ADD1C6C27869D0B001ABC3B /* AppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD1C6B27869D0B001ABC3B /* AppointmentViewModel.swift */; };
+		2AEB7BEF278FEF32000941BD /* AvailableCleanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEB7BEE278FEF32000941BD /* AvailableCleanerViewController.swift */; };
+		2AEB7BF127900B2E000941BD /* CancelAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEB7BF027900B2E000941BD /* CancelAppointmentViewController.swift */; };
+		2AEDE73426E8C5BE004D0ABB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDE73326E8C5BD004D0ABB /* BaseViewController.swift */; };
+		2AEDE73626E8C766004D0ABB /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDE73526E8C766004D0ABB /* ForgetPasswordViewController.swift */; };
+		389937BE3A8BDDB13B3F3BDD /* Pods_Eco_carwash_ServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6D53CA1336ABB0522ECA0 /* Pods_Eco_carwash_ServiceTests.framework */; };
+		3A2D30212043604710736A4A /* Pods_Eco_carwash_Service_Eco_carwash_ServiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCEF68A73B6A4CFAD6E6719 /* Pods_Eco_carwash_Service_Eco_carwash_ServiceUITests.framework */; };
+		D68674813557B63AEE557C31 /* Pods_Eco_carwash_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C9C44A2D1AAE9F1590AB3E /* Pods_Eco_carwash_Service.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A47E87A26E2371400FDABF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A47E85826E2371000FDABF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A47E85F26E2371000FDABF0;
+			remoteInfo = EcoCarWash;
+		};
+		2A47E88526E2371400FDABF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A47E85826E2371000FDABF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A47E85F26E2371000FDABF0;
+			remoteInfo = EcoCarWash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02757E279BA05439007DE8E9 /* Pods-EcoCarWash-EcoCarWashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCarWash-EcoCarWashUITests.debug.xcconfig"; path = "Target Support Files/Pods-EcoCarWash-EcoCarWashUITests/Pods-EcoCarWash-EcoCarWashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		05A741AC0DA1D4A23A3BD051 /* Pods-Eco Car Wash DriveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash DriveTests.release.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash DriveTests/Pods-Eco Car Wash DriveTests.release.xcconfig"; sourceTree = "<group>"; };
+		0BCEF68A73B6A4CFAD6E6719 /* Pods_Eco_carwash_Service_Eco_carwash_ServiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eco_carwash_Service_Eco_carwash_ServiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF6D53CA1336ABB0522ECA0 /* Pods_Eco_carwash_ServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eco_carwash_ServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29842E4CDEC31A1774D937D7 /* Pods-Eco Car Wash Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Service.debug.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Service/Pods-Eco Car Wash Service.debug.xcconfig"; sourceTree = "<group>"; };
+		2A31838A277DA7DE003319D1 /* CreateCleanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCleanerViewController.swift; sourceTree = "<group>"; };
+		2A32E76C2778735D00F21BFE /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		2A32E76E277873A300F21BFE /* ProfileServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceManager.swift; sourceTree = "<group>"; };
+		2A32E770277873D600F21BFE /* ProfileServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServiceHelper.swift; sourceTree = "<group>"; };
+		2A32E772277873EA00F21BFE /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		2A32E7742778894900F21BFE /* LeaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveModel.swift; sourceTree = "<group>"; };
+		2A32E7762778899000F21BFE /* LeaveServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveServiceManager.swift; sourceTree = "<group>"; };
+		2A32E778277889BF00F21BFE /* LeaveServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveServiceHelper.swift; sourceTree = "<group>"; };
+		2A32E77A277889F200F21BFE /* LeaveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveViewModel.swift; sourceTree = "<group>"; };
+		2A32E77C277C257300F21BFE /* Cleaner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cleaner.storyboard; sourceTree = "<group>"; };
+		2A32E77E277C26D600F21BFE /* DesignFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignFunctions.swift; sourceTree = "<group>"; };
+		2A32E781277C279D00F21BFE /* CleanerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerListViewController.swift; sourceTree = "<group>"; };
+		2A32E783277C2E2C00F21BFE /* CleanerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerCell.swift; sourceTree = "<group>"; };
+		2A32E784277C2E2C00F21BFE /* CleanerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CleanerCell.xib; sourceTree = "<group>"; };
+		2A32E788277C2FF700F21BFE /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		2A32E78A277C7B5700F21BFE /* CleanerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerModel.swift; sourceTree = "<group>"; };
+		2A32E78C277C7C0000F21BFE /* CleanerServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerServiceManager.swift; sourceTree = "<group>"; };
+		2A32E78E277C7C6800F21BFE /* CleanerServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerServiceHelper.swift; sourceTree = "<group>"; };
+		2A32E790277C7C9C00F21BFE /* CleanerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerViewModel.swift; sourceTree = "<group>"; };
+		2A3827A22704B0A5002F1932 /* ActiveServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveServicesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A3827A32704B0A5002F1932 /* ActiveServicesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActiveServicesCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A3827A62704B0C3002F1932 /* UpcomingServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingServicesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2A3827A72704B0C3002F1932 /* UpcomingServicesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpcomingServicesCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A3827AA2707341D002F1932 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		2A3827AC270735B8002F1932 /* AppointmentDurationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDurationTableViewCell.swift; sourceTree = "<group>"; };
+		2A3827AD270735B8002F1932 /* AppointmentDurationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentDurationTableViewCell.xib; sourceTree = "<group>"; };
+		2A3827B027073734002F1932 /* AppointmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTableViewCell.swift; sourceTree = "<group>"; };
+		2A3827B127073734002F1932 /* AppointmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppointmentTableViewCell.xib; sourceTree = "<group>"; };
+		2A47E86026E2371000FDABF0 /* Eco carwash Service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eco carwash Service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A47E86326E2371000FDABF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A47E86526E2371000FDABF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2A47E86726E2371000FDABF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2A47E86A26E2371000FDABF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A47E86D26E2371000FDABF0 /* EcoCarWash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EcoCarWash.xcdatamodel; sourceTree = "<group>"; };
+		2A47E86F26E2371300FDABF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A47E87226E2371300FDABF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A47E87426E2371300FDABF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A47E87926E2371400FDABF0 /* Eco carwash ServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eco carwash ServiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A47E87D26E2371400FDABF0 /* EcoCarWashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoCarWashTests.swift; sourceTree = "<group>"; };
+		2A47E87F26E2371400FDABF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A47E88426E2371400FDABF0 /* Eco carwash ServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eco carwash ServiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A47E88826E2371400FDABF0 /* EcoCarWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoCarWashUITests.swift; sourceTree = "<group>"; };
+		2A47E88A26E2371400FDABF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A47E8A326E878C500FDABF0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2A47E8BA26E886ED00FDABF0 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		2A49BBF2270F1BF000C61CE8 /* AppliedLeavesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedLeavesTableViewCell.swift; sourceTree = "<group>"; };
+		2A49BBF3270F1BF000C61CE8 /* AppliedLeavesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppliedLeavesTableViewCell.xib; sourceTree = "<group>"; };
+		2A52B3A3278AB595000A9C9C /* ServiceConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationViewController.swift; sourceTree = "<group>"; };
+		2A52B3A5278AB5D2000A9C9C /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		2A52B3A6278AB5D2000A9C9C /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		2A52B3A9278ABAAC000A9C9C /* ServiceTimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTimingViewController.swift; sourceTree = "<group>"; };
+		2A52B3AB278ABD22000A9C9C /* ServiceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTypeViewController.swift; sourceTree = "<group>"; };
+		2A52B3AD278DA068000A9C9C /* AppointmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentManager.swift; sourceTree = "<group>"; };
+		2A59146827A0F15500A59C5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2A59146C27A1373600A59C5E /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2A5FBA11270DB4DA00594D7B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2A5FBA13270DEA2400594D7B /* LeaveApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveApplicationViewController.swift; sourceTree = "<group>"; };
+		2A65D64E27155FC600D15E6C /* LeaveApplicationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveApplicationHeaderView.swift; sourceTree = "<group>"; };
+		2A65D64F27155FC600D15E6C /* LeaveApplicationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaveApplicationHeaderView.xib; sourceTree = "<group>"; };
+		2A65D6522715643800D15E6C /* AppliedLeaveHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliedLeaveHeaderView.swift; sourceTree = "<group>"; };
+		2A65D6532715643800D15E6C /* AppliedLeaveHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppliedLeaveHeaderView.xib; sourceTree = "<group>"; };
+		2A65D65627156BC100D15E6C /* LeaveStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveStatusViewController.swift; sourceTree = "<group>"; };
+		2AACF6932786BF100059F80C /* AppointmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailViewController.swift; sourceTree = "<group>"; };
+		2AACF6952786C0120059F80C /* ServiceTypeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTypeHeaderCell.swift; sourceTree = "<group>"; };
+		2AACF6962786C0120059F80C /* ServiceTypeHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTypeHeaderCell.xib; sourceTree = "<group>"; };
+		2AB74AC226EA68D700B0D10F /* SlideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		2AB74AC426EA68D700B0D10F /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		2AB74AC826EA68D800B0D10F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2AB74ADE26EA68D800B0D10F /* StackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
+		2AB74ADF26EA68D800B0D10F /* DeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceExtension.swift; sourceTree = "<group>"; };
+		2AB74AE026EA68D800B0D10F /* FontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		2AB74AE126EA68D800B0D10F /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		2AB74AE226EA68D800B0D10F /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		2AB74AE326EA68D800B0D10F /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		2AB74AE426EA68D800B0D10F /* ButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		2AB74AE526EA68D800B0D10F /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		2AB74AE626EA68D800B0D10F /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2AB74AE726EA68D800B0D10F /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2AB74AE826EA68D800B0D10F /* TextfieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtension.swift; sourceTree = "<group>"; };
+		2AB74AE926EA68D800B0D10F /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		2AB74AEA26EA68D800B0D10F /* TableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		2AB74AEC26EA68D800B0D10F /* CalendarFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarFlowLayout.swift; sourceTree = "<group>"; };
+		2AB74AED26EA68D800B0D10F /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		2AB74AEE26EA68D800B0D10F /* CalendarView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Extensions.swift"; sourceTree = "<group>"; };
+		2AB74AEF26EA68D800B0D10F /* CalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDayCell.swift; sourceTree = "<group>"; };
+		2AB74AF026EA68D800B0D10F /* CalendarView+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Style.swift"; sourceTree = "<group>"; };
+		2AB74AF126EA68D900B0D10F /* CalendarView+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+Delegate.swift"; sourceTree = "<group>"; };
+		2AB74AF226EA68D900B0D10F /* EventsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsManager.swift; sourceTree = "<group>"; };
+		2AB74AF326EA68D900B0D10F /* CalendarView+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CalendarView+DataSource.swift"; sourceTree = "<group>"; };
+		2AB74AF426EA68D900B0D10F /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		2AB74B5C26EA68D900B0D10F /* CustomPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPicker.swift; sourceTree = "<group>"; };
+		2AB74B7126EA68D900B0D10F /* CTGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTGradientView.swift; sourceTree = "<group>"; };
+		2AB74B7226EA68D900B0D10F /* ChildDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildDropDown.swift; sourceTree = "<group>"; };
+		2AB74B7326EA68D900B0D10F /* KDCircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
+		2AB74B7426EA68D900B0D10F /* AttachmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentView.swift; sourceTree = "<group>"; };
+		2AB74B7526EA68D900B0D10F /* CTSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTSegmentControl.swift; sourceTree = "<group>"; };
+		2AB74B7626EA68D900B0D10F /* ChildDropDown.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildDropDown.xib; sourceTree = "<group>"; };
+		2AB74B7726EA68D900B0D10F /* CTDayCalender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTDayCalender.swift; sourceTree = "<group>"; };
+		2AB74B7826EA68D900B0D10F /* CTDayWeekCalender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTDayWeekCalender.swift; sourceTree = "<group>"; };
+		2AB74B7926EA68D900B0D10F /* CTSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTSwitch.swift; sourceTree = "<group>"; };
+		2AB74B7A26EA68D900B0D10F /* CTCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTCustomButton.swift; sourceTree = "<group>"; };
+		2AB74B7B26EA68D900B0D10F /* CTButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTButton.swift; sourceTree = "<group>"; };
+		2AB74B7C26EA68D900B0D10F /* CTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTView.swift; sourceTree = "<group>"; };
+		2AB74B7E26EA68D900B0D10F /* CTStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTStepper.swift; sourceTree = "<group>"; };
+		2AB74B7F26EA68D900B0D10F /* CTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTTextField.swift; sourceTree = "<group>"; };
+		2AB74BA626EA68DB00B0D10F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2AB74BA726EA68DB00B0D10F /* UITableViewCell+CellShadows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CellShadows.m"; sourceTree = "<group>"; };
+		2AB74BA826EA68DB00B0D10F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2AB74BA926EA68DB00B0D10F /* UITableViewCell+CellShadows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CellShadows.h"; sourceTree = "<group>"; };
+		2AB74BAA26EA68DB00B0D10F /* Rechability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
+		2AB74BAC26EA68DB00B0D10F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2AB74BAD26EA68DB00B0D10F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2AB74BAF26EA68DB00B0D10F /* STPopupControllerTransitioningSlideVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupControllerTransitioningSlideVertical.m; sourceTree = "<group>"; };
+		2AB74BB026EA68DB00B0D10F /* STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopup.h; sourceTree = "<group>"; };
+		2AB74BB126EA68DB00B0D10F /* STPopupNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupNavigationBar.m; sourceTree = "<group>"; };
+		2AB74BB226EA68DB00B0D10F /* UIResponder+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+STPopup.h"; sourceTree = "<group>"; };
+		2AB74BB326EA68DB00B0D10F /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupLeftBarItem.m; sourceTree = "<group>"; };
+		2AB74BB426EA68DB00B0D10F /* UIViewController+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+STPopup.m"; sourceTree = "<group>"; };
+		2AB74BB526EA68DB00B0D10F /* STPopupControllerTransitioningFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupControllerTransitioningFade.m; sourceTree = "<group>"; };
+		2AB74BB626EA68DB00B0D10F /* STPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupController.m; sourceTree = "<group>"; };
+		2AB74BB726EA68DB00B0D10F /* UIResponder+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+STPopup.m"; sourceTree = "<group>"; };
+		2AB74BB826EA68DB00B0D10F /* STPopupNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupNavigationBar.h; sourceTree = "<group>"; };
+		2AB74BB926EA68DB00B0D10F /* STPopupControllerTransitioningSlideVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningSlideVertical.h; sourceTree = "<group>"; };
+		2AB74BBA26EA68DB00B0D10F /* STPopupControllerTransitioningFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningFade.h; sourceTree = "<group>"; };
+		2AB74BBB26EA68DB00B0D10F /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
+		2AB74BBC26EA68DB00B0D10F /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		2AB74BBD26EA68DB00B0D10F /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
+		2AB74BBF26EA68DB00B0D10F /* SlideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		2AB74BCD26EA68DC00B0D10F /* ServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		2AB74CF726EA869700B0D10F /* EcoCarWash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EcoCarWash-Bridging-Header.h"; sourceTree = "<group>"; };
+		2AB9FDD026EB228C0022EE74 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2AB9FDD326EB233E0022EE74 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		2AB9FDD526EB23910022EE74 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		2AB9FDD726EB26790022EE74 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2AB9FDD926EB69A70022EE74 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		2AB9FDF826EBEF740022EE74 /* MobileNoVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNoVerificationViewController.swift; sourceTree = "<group>"; };
+		2AD68CAB2774A23900020DB2 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		2AD68CAD2774A25400020DB2 /* SignupServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupServiceManager.swift; sourceTree = "<group>"; };
+		2AD68CAF2774A26300020DB2 /* LoginServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceHelper.swift; sourceTree = "<group>"; };
+		2AD68CB12774A27000020DB2 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = ../../../../Service/EcoCarWash/ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
+		2AD68CB32774A4CE00020DB2 /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		2ADD1C5C2785BEE5001ABC3B /* BookedAppointmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookedAppointmentCell.xib; sourceTree = "<group>"; };
+		2ADD1C5D2785BEE6001ABC3B /* BookedAppointmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookedAppointmentCell.swift; sourceTree = "<group>"; };
+		2ADD1C612785BFBD001ABC3B /* AppointmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListViewController.swift; sourceTree = "<group>"; };
+		2ADD1C632785C05B001ABC3B /* Appointment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Appointment.storyboard; sourceTree = "<group>"; };
+		2ADD1C6527869CBA001ABC3B /* AppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentModel.swift; sourceTree = "<group>"; };
+		2ADD1C6727869CD3001ABC3B /* AppointmentServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentServiceManager.swift; sourceTree = "<group>"; };
+		2ADD1C6927869CF5001ABC3B /* AppointmentServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentServiceHelper.swift; sourceTree = "<group>"; };
+		2ADD1C6B27869D0B001ABC3B /* AppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewModel.swift; sourceTree = "<group>"; };
+		2AEB7BEE278FEF32000941BD /* AvailableCleanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableCleanerViewController.swift; sourceTree = "<group>"; };
+		2AEB7BF027900B2E000941BD /* CancelAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAppointmentViewController.swift; sourceTree = "<group>"; };
+		2AEDE73326E8C5BD004D0ABB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2AEDE73526E8C766004D0ABB /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		2D1B011362A2ABA6CFA2E12F /* Pods-Eco carwash Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco carwash Service.release.xcconfig"; path = "Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service.release.xcconfig"; sourceTree = "<group>"; };
+		2D33A850D26343670312BF13 /* Pods-Eco Car Wash ServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash ServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash ServiceTests/Pods-Eco Car Wash ServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		360EA2E965CE36B73442F668 /* Pods-EcoCarWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCarWash.debug.xcconfig"; path = "Target Support Files/Pods-EcoCarWash/Pods-EcoCarWash.debug.xcconfig"; sourceTree = "<group>"; };
+		4C39B7F1874673C7DFD80CB2 /* Pods-Eco Car Wash ServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash ServiceTests.release.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash ServiceTests/Pods-Eco Car Wash ServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		5191C905CCC465DBF754C125 /* Pods-EcoCarWash-EcoCarWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCarWash-EcoCarWashUITests.release.xcconfig"; path = "Target Support Files/Pods-EcoCarWash-EcoCarWashUITests/Pods-EcoCarWash-EcoCarWashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6B656821F7166A8A1294330C /* Pods-Eco carwash ServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco carwash ServiceTests.debug.xcconfig"; path = "Target Support Files/Pods-Eco carwash ServiceTests/Pods-Eco carwash ServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77AFF677F7791EA5FABD4BC7 /* Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.release.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests/Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7CB6378CD9B2AD27C9B98DF3 /* Pods-Eco carwash Service-Eco carwash ServiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco carwash Service-Eco carwash ServiceUITests.release.xcconfig"; path = "Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81A5DE7D761DE23AB1D717A4 /* Pods-EcoCarWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCarWash.release.xcconfig"; path = "Target Support Files/Pods-EcoCarWash/Pods-EcoCarWash.release.xcconfig"; sourceTree = "<group>"; };
+		9B3ED2EB011B2197E06522FA /* Pods-Eco carwash Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco carwash Service.debug.xcconfig"; path = "Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service.debug.xcconfig"; sourceTree = "<group>"; };
+		A2AD607AF2286FE206F4FA4F /* Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.release.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests/Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A548EA088E67F0A340DB74C5 /* Pods-Eco Car Wash DriveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash DriveTests.debug.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash DriveTests/Pods-Eco Car Wash DriveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8182124C0296623474935E8 /* Pods-Eco carwash ServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco carwash ServiceTests.release.xcconfig"; path = "Target Support Files/Pods-Eco carwash ServiceTests/Pods-Eco carwash ServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2B80C2F7E178F8309EFCEA0 /* Pods-Eco Car Wash Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Drive.debug.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Drive/Pods-Eco Car Wash Drive.debug.xcconfig"; sourceTree = "<group>"; };
+		B8C9C44A2D1AAE9F1590AB3E /* Pods_Eco_carwash_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eco_carwash_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C873B96BEC7B723D735C63F3 /* Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests/Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF01259E21FED42ACE32451B /* Pods-Eco Car Wash Drive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Drive.release.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Drive/Pods-Eco Car Wash Drive.release.xcconfig"; sourceTree = "<group>"; };
+		D0D6D3CA8154AE243424D4C7 /* Pods-EcoCarWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCarWashTests.release.xcconfig"; path = "Target Support Files/Pods-EcoCarWashTests/Pods-EcoCarWashTests.release.xcconfig"; sourceTree = "<group>"; };
+		D27246EEF57C8730DDC8A55F /* Pods-Eco carwash Service-Eco carwash ServiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco carwash Service-Eco carwash ServiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E164AB2CF54D5E08344053F2 /* Pods-EcoCarWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoCarWashTests.debug.xcconfig"; path = "Target Support Files/Pods-EcoCarWashTests/Pods-EcoCarWashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F36E1EFE4A1B562D034059C4 /* Pods-Eco Car Wash Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Service.release.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Service/Pods-Eco Car Wash Service.release.xcconfig"; sourceTree = "<group>"; };
+		F74F01AFEEC68039616F9612 /* Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.debug.xcconfig"; path = "Target Support Files/Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests/Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A47E85D26E2371000FDABF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68674813557B63AEE557C31 /* Pods_Eco_carwash_Service.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A47E87626E2371400FDABF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389937BE3A8BDDB13B3F3BDD /* Pods_Eco_carwash_ServiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A47E88126E2371400FDABF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2D30212043604710736A4A /* Pods_Eco_carwash_Service_Eco_carwash_ServiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032267D1CFF3A540AED96635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				360EA2E965CE36B73442F668 /* Pods-EcoCarWash.debug.xcconfig */,
+				81A5DE7D761DE23AB1D717A4 /* Pods-EcoCarWash.release.xcconfig */,
+				02757E279BA05439007DE8E9 /* Pods-EcoCarWash-EcoCarWashUITests.debug.xcconfig */,
+				5191C905CCC465DBF754C125 /* Pods-EcoCarWash-EcoCarWashUITests.release.xcconfig */,
+				E164AB2CF54D5E08344053F2 /* Pods-EcoCarWashTests.debug.xcconfig */,
+				D0D6D3CA8154AE243424D4C7 /* Pods-EcoCarWashTests.release.xcconfig */,
+				29842E4CDEC31A1774D937D7 /* Pods-Eco Car Wash Service.debug.xcconfig */,
+				F36E1EFE4A1B562D034059C4 /* Pods-Eco Car Wash Service.release.xcconfig */,
+				C873B96BEC7B723D735C63F3 /* Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.debug.xcconfig */,
+				A2AD607AF2286FE206F4FA4F /* Pods-Eco Car Wash Service-Eco Car Wash ServiceUITests.release.xcconfig */,
+				2D33A850D26343670312BF13 /* Pods-Eco Car Wash ServiceTests.debug.xcconfig */,
+				4C39B7F1874673C7DFD80CB2 /* Pods-Eco Car Wash ServiceTests.release.xcconfig */,
+				B2B80C2F7E178F8309EFCEA0 /* Pods-Eco Car Wash Drive.debug.xcconfig */,
+				CF01259E21FED42ACE32451B /* Pods-Eco Car Wash Drive.release.xcconfig */,
+				F74F01AFEEC68039616F9612 /* Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.debug.xcconfig */,
+				77AFF677F7791EA5FABD4BC7 /* Pods-Eco Car Wash Drive-Eco Car Wash DriveUITests.release.xcconfig */,
+				A548EA088E67F0A340DB74C5 /* Pods-Eco Car Wash DriveTests.debug.xcconfig */,
+				05A741AC0DA1D4A23A3BD051 /* Pods-Eco Car Wash DriveTests.release.xcconfig */,
+				9B3ED2EB011B2197E06522FA /* Pods-Eco carwash Service.debug.xcconfig */,
+				2D1B011362A2ABA6CFA2E12F /* Pods-Eco carwash Service.release.xcconfig */,
+				D27246EEF57C8730DDC8A55F /* Pods-Eco carwash Service-Eco carwash ServiceUITests.debug.xcconfig */,
+				7CB6378CD9B2AD27C9B98DF3 /* Pods-Eco carwash Service-Eco carwash ServiceUITests.release.xcconfig */,
+				6B656821F7166A8A1294330C /* Pods-Eco carwash ServiceTests.debug.xcconfig */,
+				A8182124C0296623474935E8 /* Pods-Eco carwash ServiceTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1BF51FB85F8EC04180A49779 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8C9C44A2D1AAE9F1590AB3E /* Pods_Eco_carwash_Service.framework */,
+				0BCEF68A73B6A4CFAD6E6719 /* Pods_Eco_carwash_Service_Eco_carwash_ServiceUITests.framework */,
+				0FF6D53CA1336ABB0522ECA0 /* Pods_Eco_carwash_ServiceTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A32E780277C277500F21BFE /* Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				2A32E781277C279D00F21BFE /* CleanerListViewController.swift */,
+				2A31838A277DA7DE003319D1 /* CreateCleanerViewController.swift */,
+				2AEB7BEE278FEF32000941BD /* AvailableCleanerViewController.swift */,
+			);
+			name = Cleaner;
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		2A32E787277C2FF700F21BFE /* RatingView */ = {
+			isa = PBXGroup;
+			children = (
+				2A32E788277C2FF700F21BFE /* RatingView.swift */,
+			);
+			path = RatingView;
+			sourceTree = "<group>";
+		};
+		2A3827A12704B059002F1932 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A3827A22704B0A5002F1932 /* ActiveServicesCollectionViewCell.swift */,
+				2A3827A62704B0C3002F1932 /* UpcomingServicesCollectionViewCell.swift */,
+				2A3827A72704B0C3002F1932 /* UpcomingServicesCollectionViewCell.xib */,
+				2A3827A32704B0A5002F1932 /* ActiveServicesCollectionViewCell.xib */,
+			);
+			name = CollectionCell;
+			sourceTree = "<group>";
+		};
+		2A47E85726E2371000FDABF0 = {
+			isa = PBXGroup;
+			children = (
+				2A47E86226E2371000FDABF0 /* EcoCarWash */,
+				2A47E87C26E2371400FDABF0 /* EcoCarWashTests */,
+				2A47E88726E2371400FDABF0 /* EcoCarWashUITests */,
+				2A47E86126E2371000FDABF0 /* Products */,
+				032267D1CFF3A540AED96635 /* Pods */,
+				1BF51FB85F8EC04180A49779 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A47E86126E2371000FDABF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E86026E2371000FDABF0 /* Eco carwash Service.app */,
+				2A47E87926E2371400FDABF0 /* Eco carwash ServiceTests.xctest */,
+				2A47E88426E2371400FDABF0 /* Eco carwash ServiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A47E86226E2371000FDABF0 /* EcoCarWash */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E87426E2371300FDABF0 /* Info.plist */,
+				2A59146827A0F15500A59C5E /* GoogleService-Info.plist */,
+				2AB74CF726EA869700B0D10F /* EcoCarWash-Bridging-Header.h */,
+				2A47E8B026E87C2C00FDABF0 /* AppDelegate */,
+				2AB74AC326EA68D700B0D10F /* Manager */,
+				2AB74BCF26EA68DC00B0D10F /* Model */,
+				2AB74B8026EA68DA00B0D10F /* ServiceManager */,
+				2AB74BC026EA68DC00B0D10F /* ServiceHelper */,
+				2AB74B8E26EA68DA00B0D10F /* ViewModel */,
+				2AB9FDD226EB23000022EE74 /* Controller */,
+				2AB74AC726EA68D800B0D10F /* Views */,
+				2A47E8B926E884E300FDABF0 /* Storyboards */,
+				2AB74BA526EA68DB00B0D10F /* Other Classes */,
+				2A47E8BC26E88B4400FDABF0 /* Assets */,
+				2A47E8B826E8807800FDABF0 /* Others */,
+			);
+			path = EcoCarWash;
+			sourceTree = "<group>";
+		};
+		2A47E87C26E2371400FDABF0 /* EcoCarWashTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E87D26E2371400FDABF0 /* EcoCarWashTests.swift */,
+				2A47E87F26E2371400FDABF0 /* Info.plist */,
+			);
+			path = EcoCarWashTests;
+			sourceTree = "<group>";
+		};
+		2A47E88726E2371400FDABF0 /* EcoCarWashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E88826E2371400FDABF0 /* EcoCarWashUITests.swift */,
+				2A47E88A26E2371400FDABF0 /* Info.plist */,
+			);
+			path = EcoCarWashUITests;
+			sourceTree = "<group>";
+		};
+		2A47E8A026E7CB2F00FDABF0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2AB9FDD926EB69A70022EE74 /* TutorialViewController.swift */,
+				2A47E86726E2371000FDABF0 /* LoginViewController.swift */,
+				2AEDE73526E8C766004D0ABB /* ForgetPasswordViewController.swift */,
+				2AB9FDF826EBEF740022EE74 /* MobileNoVerificationViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2A47E8B026E87C2C00FDABF0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E86326E2371000FDABF0 /* AppDelegate.swift */,
+				2A47E86526E2371000FDABF0 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2A47E8B826E8807800FDABF0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E87126E2371300FDABF0 /* LaunchScreen.storyboard */,
+				2A47E86C26E2371000FDABF0 /* EcoCarWash.xcdatamodeld */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2A47E8B926E884E300FDABF0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E86926E2371000FDABF0 /* Main.storyboard */,
+				2AB9FDD526EB23910022EE74 /* Dashboard.storyboard */,
+				2ADD1C632785C05B001ABC3B /* Appointment.storyboard */,
+				2A32E77C277C257300F21BFE /* Cleaner.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2A47E8BC26E88B4400FDABF0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2A47E86F26E2371300FDABF0 /* Assets.xcassets */,
+				2A47E8BA26E886ED00FDABF0 /* Color.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2AB74AC326EA68D700B0D10F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2AB74AC426EA68D700B0D10F /* UserManager.swift */,
+				2A52B3AD278DA068000A9C9C /* AppointmentManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2AB74AC726EA68D800B0D10F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2AB74AC826EA68D800B0D10F /* Constants.swift */,
+				2A47E8A326E878C500FDABF0 /* Utilities.swift */,
+				2AB74CE526EA6AA600B0D10F /* TableCell */,
+				2A3827A12704B059002F1932 /* CollectionCell */,
+				2AB74ADD26EA68D800B0D10F /* Extension */,
+				2AB74AEB26EA68D800B0D10F /* CalendarView */,
+				2AB74B7026EA68D900B0D10F /* CustomClass */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2AB74ADD26EA68D800B0D10F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2AD68CB32774A4CE00020DB2 /* UserDefaultsExtensions.swift */,
+				2AB74ADE26EA68D800B0D10F /* StackViewExtension.swift */,
+				2AB74ADF26EA68D800B0D10F /* DeviceExtension.swift */,
+				2AB74AE026EA68D800B0D10F /* FontExtension.swift */,
+				2AB74AE126EA68D800B0D10F /* ArrayExtension.swift */,
+				2AB74AE226EA68D800B0D10F /* ImageExtension.swift */,
+				2AB74AE326EA68D800B0D10F /* DesignableView.swift */,
+				2AB74AE426EA68D800B0D10F /* ButtonExtension.swift */,
+				2AB74AE526EA68D800B0D10F /* ViewExtension.swift */,
+				2AB74AE626EA68D800B0D10F /* ColorExtension.swift */,
+				2AB74AE726EA68D800B0D10F /* StringExtension.swift */,
+				2AB74AE826EA68D800B0D10F /* TextfieldExtension.swift */,
+				2AB74AE926EA68D800B0D10F /* DictionaryExtension.swift */,
+				2AB74AEA26EA68D800B0D10F /* TableViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2AB74AEB26EA68D800B0D10F /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				2AB74AEC26EA68D800B0D10F /* CalendarFlowLayout.swift */,
+				2AB74AED26EA68D800B0D10F /* CalendarHeaderView.swift */,
+				2AB74AEE26EA68D800B0D10F /* CalendarView+Extensions.swift */,
+				2AB74AEF26EA68D800B0D10F /* CalendarDayCell.swift */,
+				2AB74AF026EA68D800B0D10F /* CalendarView+Style.swift */,
+				2AB74AF126EA68D900B0D10F /* CalendarView+Delegate.swift */,
+				2AB74AF226EA68D900B0D10F /* EventsManager.swift */,
+				2AB74AF326EA68D900B0D10F /* CalendarView+DataSource.swift */,
+				2AB74AF426EA68D900B0D10F /* CalendarView.swift */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		2AB74B7026EA68D900B0D10F /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				2A32E787277C2FF700F21BFE /* RatingView */,
+				2A32E77E277C26D600F21BFE /* DesignFunctions.swift */,
+				2AB74B5C26EA68D900B0D10F /* CustomPicker.swift */,
+				2AB74B7126EA68D900B0D10F /* CTGradientView.swift */,
+				2AB74B7226EA68D900B0D10F /* ChildDropDown.swift */,
+				2AB74B7326EA68D900B0D10F /* KDCircularProgress.swift */,
+				2AB74B7426EA68D900B0D10F /* AttachmentView.swift */,
+				2AB74B7526EA68D900B0D10F /* CTSegmentControl.swift */,
+				2AB74B7626EA68D900B0D10F /* ChildDropDown.xib */,
+				2AB74B7726EA68D900B0D10F /* CTDayCalender.swift */,
+				2AB74B7826EA68D900B0D10F /* CTDayWeekCalender.swift */,
+				2AB74B7926EA68D900B0D10F /* CTSwitch.swift */,
+				2AB74B7A26EA68D900B0D10F /* CTCustomButton.swift */,
+				2AB74B7B26EA68D900B0D10F /* CTButton.swift */,
+				2AB74B7C26EA68D900B0D10F /* CTView.swift */,
+				2AB74B7E26EA68D900B0D10F /* CTStepper.swift */,
+				2AB74B7F26EA68D900B0D10F /* CTTextField.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		2AB74B8026EA68DA00B0D10F /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				2A59146C27A1373600A59C5E /* LocationManager.swift */,
+				2AD68CAD2774A25400020DB2 /* SignupServiceManager.swift */,
+				2A32E76E277873A300F21BFE /* ProfileServiceManager.swift */,
+				2A32E7762778899000F21BFE /* LeaveServiceManager.swift */,
+				2A32E78C277C7C0000F21BFE /* CleanerServiceManager.swift */,
+				2ADD1C6727869CD3001ABC3B /* AppointmentServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		2AB74B8E26EA68DA00B0D10F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2AD68CB12774A27000020DB2 /* LoginViewModel.swift */,
+				2A32E772277873EA00F21BFE /* ProfileViewModel.swift */,
+				2A32E77A277889F200F21BFE /* LeaveViewModel.swift */,
+				2A32E790277C7C9C00F21BFE /* CleanerViewModel.swift */,
+				2ADD1C6B27869D0B001ABC3B /* AppointmentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2AB74BA526EA68DB00B0D10F /* Other Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2AB74BA626EA68DB00B0D10F /* MBProgressHUD.m */,
+				2AB74BA726EA68DB00B0D10F /* UITableViewCell+CellShadows.m */,
+				2AB74BA826EA68DB00B0D10F /* MBProgressHUD.h */,
+				2AB74BA926EA68DB00B0D10F /* UITableViewCell+CellShadows.h */,
+				2AB74BAA26EA68DB00B0D10F /* Rechability.swift */,
+				2AB74BAB26EA68DB00B0D10F /* STPopup */,
+			);
+			path = "Other Classes";
+			sourceTree = "<group>";
+		};
+		2AB74BAB26EA68DB00B0D10F /* STPopup */ = {
+			isa = PBXGroup;
+			children = (
+				2AB74BAC26EA68DB00B0D10F /* LICENSE */,
+				2AB74BAD26EA68DB00B0D10F /* README.md */,
+				2AB74BAE26EA68DB00B0D10F /* STPopup */,
+			);
+			path = STPopup;
+			sourceTree = "<group>";
+		};
+		2AB74BAE26EA68DB00B0D10F /* STPopup */ = {
+			isa = PBXGroup;
+			children = (
+				2AB74BAF26EA68DB00B0D10F /* STPopupControllerTransitioningSlideVertical.m */,
+				2AB74BB026EA68DB00B0D10F /* STPopup.h */,
+				2AB74BB126EA68DB00B0D10F /* STPopupNavigationBar.m */,
+				2AB74BB226EA68DB00B0D10F /* UIResponder+STPopup.h */,
+				2AB74BB326EA68DB00B0D10F /* STPopupLeftBarItem.m */,
+				2AB74BB426EA68DB00B0D10F /* UIViewController+STPopup.m */,
+				2AB74BB526EA68DB00B0D10F /* STPopupControllerTransitioningFade.m */,
+				2AB74BB626EA68DB00B0D10F /* STPopupController.m */,
+				2AB74BB726EA68DB00B0D10F /* UIResponder+STPopup.m */,
+				2AB74BB826EA68DB00B0D10F /* STPopupNavigationBar.h */,
+				2AB74BB926EA68DB00B0D10F /* STPopupControllerTransitioningSlideVertical.h */,
+				2AB74BBA26EA68DB00B0D10F /* STPopupControllerTransitioningFade.h */,
+				2AB74BBB26EA68DB00B0D10F /* UIViewController+STPopup.h */,
+				2AB74BBC26EA68DB00B0D10F /* STPopupLeftBarItem.h */,
+				2AB74BBD26EA68DB00B0D10F /* STPopupController.h */,
+			);
+			path = STPopup;
+			sourceTree = "<group>";
+		};
+		2AB74BC026EA68DC00B0D10F /* ServiceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2AB74BCD26EA68DC00B0D10F /* ServiceHelper.swift */,
+				2AD68CAF2774A26300020DB2 /* LoginServiceHelper.swift */,
+				2A32E770277873D600F21BFE /* ProfileServiceHelper.swift */,
+				2A32E778277889BF00F21BFE /* LeaveServiceHelper.swift */,
+				2A32E78E277C7C6800F21BFE /* CleanerServiceHelper.swift */,
+				2ADD1C6927869CF5001ABC3B /* AppointmentServiceHelper.swift */,
+			);
+			path = ServiceHelper;
+			sourceTree = "<group>";
+		};
+		2AB74BCF26EA68DC00B0D10F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AD68CAB2774A23900020DB2 /* UserDetails.swift */,
+				2A32E76C2778735D00F21BFE /* ProfileModel.swift */,
+				2A32E7742778894900F21BFE /* LeaveModel.swift */,
+				2A32E78A277C7B5700F21BFE /* CleanerModel.swift */,
+				2ADD1C6527869CBA001ABC3B /* AppointmentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AB74CE526EA6AA600B0D10F /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A52B3A6278AB5D2000A9C9C /* ServiceTableViewCell.swift */,
+				2A52B3A5278AB5D2000A9C9C /* ServiceTableViewCell.xib */,
+				2AACF6952786C0120059F80C /* ServiceTypeHeaderCell.swift */,
+				2AACF6962786C0120059F80C /* ServiceTypeHeaderCell.xib */,
+				2ADD1C5D2785BEE6001ABC3B /* BookedAppointmentCell.swift */,
+				2ADD1C5C2785BEE5001ABC3B /* BookedAppointmentCell.xib */,
+				2AB74AC226EA68D700B0D10F /* SlideMenuTableViewCell.swift */,
+				2A3827AC270735B8002F1932 /* AppointmentDurationTableViewCell.swift */,
+				2A3827AD270735B8002F1932 /* AppointmentDurationTableViewCell.xib */,
+				2A3827B027073734002F1932 /* AppointmentTableViewCell.swift */,
+				2A32E783277C2E2C00F21BFE /* CleanerCell.swift */,
+				2A32E784277C2E2C00F21BFE /* CleanerCell.xib */,
+				2A3827B127073734002F1932 /* AppointmentTableViewCell.xib */,
+				2AB74BBF26EA68DB00B0D10F /* SlideMenuTableViewCell.xib */,
+				2A49BBF2270F1BF000C61CE8 /* AppliedLeavesTableViewCell.swift */,
+				2A65D6522715643800D15E6C /* AppliedLeaveHeaderView.swift */,
+				2A65D6532715643800D15E6C /* AppliedLeaveHeaderView.xib */,
+				2A65D64E27155FC600D15E6C /* LeaveApplicationHeaderView.swift */,
+				2A65D64F27155FC600D15E6C /* LeaveApplicationHeaderView.xib */,
+				2A49BBF3270F1BF000C61CE8 /* AppliedLeavesTableViewCell.xib */,
+			);
+			name = TableCell;
+			sourceTree = "<group>";
+		};
+		2AB9FDD226EB23000022EE74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2AEDE73326E8C5BD004D0ABB /* BaseViewController.swift */,
+				2AB9FDD026EB228C0022EE74 /* RootViewController.swift */,
+				2AB9FDD726EB26790022EE74 /* MenuViewController.swift */,
+				2A47E8A026E7CB2F00FDABF0 /* Login */,
+				2AB9FDF326EB8C4F0022EE74 /* Dashboard */,
+				2ADD1C602785BF9F001ABC3B /* Appointment */,
+				2A32E780277C277500F21BFE /* Cleaner */,
+			);
+			name = Controller;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2AB9FDF326EB8C4F0022EE74 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2AB9FDD326EB233E0022EE74 /* DashboardViewController.swift */,
+				2A3827AA2707341D002F1932 /* AppointmentsViewController.swift */,
+				2A5FBA11270DB4DA00594D7B /* ProfileViewController.swift */,
+				2A5FBA13270DEA2400594D7B /* LeaveApplicationViewController.swift */,
+				2A65D65627156BC100D15E6C /* LeaveStatusViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		2ADD1C602785BF9F001ABC3B /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				2A52B3A3278AB595000A9C9C /* ServiceConfigurationViewController.swift */,
+				2A52B3AB278ABD22000A9C9C /* ServiceTypeViewController.swift */,
+				2A52B3A9278ABAAC000A9C9C /* ServiceTimingViewController.swift */,
+				2ADD1C612785BFBD001ABC3B /* AppointmentListViewController.swift */,
+				2AACF6932786BF100059F80C /* AppointmentDetailViewController.swift */,
+				2AEB7BF027900B2E000941BD /* CancelAppointmentViewController.swift */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A47E85F26E2371000FDABF0 /* Eco carwash Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A47E88D26E2371400FDABF0 /* Build configuration list for PBXNativeTarget "Eco carwash Service" */;
+			buildPhases = (
+				62EA3635C5693EBD10B14F2D /* [CP] Check Pods Manifest.lock */,
+				2A47E85C26E2371000FDABF0 /* Sources */,
+				2A47E85D26E2371000FDABF0 /* Frameworks */,
+				2A47E85E26E2371000FDABF0 /* Resources */,
+				FD311D29276166DD88DFDEFE /* [CP] Embed Pods Frameworks */,
+				A45AF36B302A6196C865CC77 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eco carwash Service";
+			productName = EcoCarWash;
+			productReference = 2A47E86026E2371000FDABF0 /* Eco carwash Service.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A47E87826E2371400FDABF0 /* Eco carwash ServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A47E89026E2371400FDABF0 /* Build configuration list for PBXNativeTarget "Eco carwash ServiceTests" */;
+			buildPhases = (
+				78082FAF15B4F86C888C4702 /* [CP] Check Pods Manifest.lock */,
+				2A47E87526E2371400FDABF0 /* Sources */,
+				2A47E87626E2371400FDABF0 /* Frameworks */,
+				2A47E87726E2371400FDABF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A47E87B26E2371400FDABF0 /* PBXTargetDependency */,
+			);
+			name = "Eco carwash ServiceTests";
+			productName = EcoCarWashTests;
+			productReference = 2A47E87926E2371400FDABF0 /* Eco carwash ServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A47E88326E2371400FDABF0 /* Eco carwash ServiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A47E89326E2371400FDABF0 /* Build configuration list for PBXNativeTarget "Eco carwash ServiceUITests" */;
+			buildPhases = (
+				22F3EC2448B3311FD6868CD3 /* [CP] Check Pods Manifest.lock */,
+				2A47E88026E2371400FDABF0 /* Sources */,
+				2A47E88126E2371400FDABF0 /* Frameworks */,
+				2A47E88226E2371400FDABF0 /* Resources */,
+				A5565876A8FA771F2FF2D43D /* [CP] Embed Pods Frameworks */,
+				6E5941091C9D3B6BB965B3FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A47E88626E2371400FDABF0 /* PBXTargetDependency */,
+			);
+			name = "Eco carwash ServiceUITests";
+			productName = EcoCarWashUITests;
+			productReference = 2A47E88426E2371400FDABF0 /* Eco carwash ServiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A47E85826E2371000FDABF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2A47E85F26E2371000FDABF0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					2A47E87826E2371400FDABF0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 2A47E85F26E2371000FDABF0;
+					};
+					2A47E88326E2371400FDABF0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 2A47E85F26E2371000FDABF0;
+					};
+				};
+			};
+			buildConfigurationList = 2A47E85B26E2371000FDABF0 /* Build configuration list for PBXProject "Eco carwash Service" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A47E85726E2371000FDABF0;
+			productRefGroup = 2A47E86126E2371000FDABF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A47E85F26E2371000FDABF0 /* Eco carwash Service */,
+				2A47E87826E2371400FDABF0 /* Eco carwash ServiceTests */,
+				2A47E88326E2371400FDABF0 /* Eco carwash ServiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A47E85E26E2371000FDABF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A32E786277C2E2C00F21BFE /* CleanerCell.xib in Resources */,
+				2A47E87326E2371300FDABF0 /* LaunchScreen.storyboard in Resources */,
+				2A47E8BB26E886ED00FDABF0 /* Color.xcassets in Resources */,
+				2A3827A92704B0C3002F1932 /* UpcomingServicesCollectionViewCell.xib in Resources */,
+				2ADD1C642785C05B001ABC3B /* Appointment.storyboard in Resources */,
+				2AACF6982786C0120059F80C /* ServiceTypeHeaderCell.xib in Resources */,
+				2A3827A52704B0A5002F1932 /* ActiveServicesCollectionViewCell.xib in Resources */,
+				2A52B3A7278AB5D2000A9C9C /* ServiceTableViewCell.xib in Resources */,
+				2A65D65127155FC600D15E6C /* LeaveApplicationHeaderView.xib in Resources */,
+				2A47E87026E2371300FDABF0 /* Assets.xcassets in Resources */,
+				2AB74C8626EA68DD00B0D10F /* ChildDropDown.xib in Resources */,
+				2AB74CBF26EA68DE00B0D10F /* SlideMenuTableViewCell.xib in Resources */,
+				2A49BBF5270F1BF100C61CE8 /* AppliedLeavesTableViewCell.xib in Resources */,
+				2AB74CB626EA68DE00B0D10F /* LICENSE in Resources */,
+				2A47E86B26E2371000FDABF0 /* Main.storyboard in Resources */,
+				2A65D6552715643800D15E6C /* AppliedLeaveHeaderView.xib in Resources */,
+				2A3827AF270735B8002F1932 /* AppointmentDurationTableViewCell.xib in Resources */,
+				2AB9FDD626EB23910022EE74 /* Dashboard.storyboard in Resources */,
+				2A32E77D277C257300F21BFE /* Cleaner.storyboard in Resources */,
+				2A59146927A0F15500A59C5E /* GoogleService-Info.plist in Resources */,
+				2ADD1C5E2785BEE6001ABC3B /* BookedAppointmentCell.xib in Resources */,
+				2AB74CB726EA68DE00B0D10F /* README.md in Resources */,
+				2A3827B327073734002F1932 /* AppointmentTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A47E87726E2371400FDABF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A47E88226E2371400FDABF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22F3EC2448B3311FD6868CD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eco carwash Service-Eco carwash ServiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62EA3635C5693EBD10B14F2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eco carwash Service-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5941091C9D3B6BB965B3FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78082FAF15B4F86C888C4702 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eco carwash ServiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A45AF36B302A6196C865CC77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5565876A8FA771F2FF2D43D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service-Eco carwash ServiceUITests/Pods-Eco carwash Service-Eco carwash ServiceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD311D29276166DD88DFDEFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Eco carwash Service/Pods-Eco carwash Service-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A47E85C26E2371000FDABF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB74CBE26EA68DE00B0D10F /* UIResponder+STPopup.m in Sources */,
+				2AD68CAE2774A25400020DB2 /* SignupServiceManager.swift in Sources */,
+				2A32E77B277889F200F21BFE /* LeaveViewModel.swift in Sources */,
+				2ADD1C622785BFBD001ABC3B /* AppointmentListViewController.swift in Sources */,
+				2A32E789277C2FF700F21BFE /* RatingView.swift in Sources */,
+				2AB74CB826EA68DE00B0D10F /* STPopupControllerTransitioningSlideVertical.m in Sources */,
+				2A52B3AA278ABAAC000A9C9C /* ServiceTimingViewController.swift in Sources */,
+				2A32E791277C7C9C00F21BFE /* CleanerViewModel.swift in Sources */,
+				2AB74BE726EA68DD00B0D10F /* SlideMenuTableViewCell.swift in Sources */,
+				2AB74CB326EA68DE00B0D10F /* MBProgressHUD.m in Sources */,
+				2AB74CBC26EA68DE00B0D10F /* STPopupControllerTransitioningFade.m in Sources */,
+				2AB74C1126EA68DD00B0D10F /* CalendarView+DataSource.swift in Sources */,
+				2AD68CB02774A26300020DB2 /* LoginServiceHelper.swift in Sources */,
+				2AB74CBD26EA68DE00B0D10F /* STPopupController.m in Sources */,
+				2AEB7BF127900B2E000941BD /* CancelAppointmentViewController.swift in Sources */,
+				2AB9FDD126EB228C0022EE74 /* RootViewController.swift in Sources */,
+				2AB74C8F26EA68DD00B0D10F /* CTTextField.swift in Sources */,
+				2A47E8A426E878C500FDABF0 /* Utilities.swift in Sources */,
+				2AB74C8226EA68DD00B0D10F /* ChildDropDown.swift in Sources */,
+				2AB74C8926EA68DD00B0D10F /* CTSwitch.swift in Sources */,
+				2AB74C8126EA68DD00B0D10F /* CTGradientView.swift in Sources */,
+				2A65D6542715643800D15E6C /* AppliedLeaveHeaderView.swift in Sources */,
+				2AEDE73426E8C5BE004D0ABB /* BaseViewController.swift in Sources */,
+				2A3827A42704B0A5002F1932 /* ActiveServicesCollectionViewCell.swift in Sources */,
+				2AB74C0826EA68DD00B0D10F /* DictionaryExtension.swift in Sources */,
+				2A32E76F277873A300F21BFE /* ProfileServiceManager.swift in Sources */,
+				2A32E78F277C7C6800F21BFE /* CleanerServiceHelper.swift in Sources */,
+				2AB74C0E26EA68DD00B0D10F /* CalendarView+Style.swift in Sources */,
+				2ADD1C5F2785BEE6001ABC3B /* BookedAppointmentCell.swift in Sources */,
+				2AD68CB42774A4CE00020DB2 /* UserDefaultsExtensions.swift in Sources */,
+				2A32E782277C279D00F21BFE /* CleanerListViewController.swift in Sources */,
+				2AB74C0326EA68DD00B0D10F /* ButtonExtension.swift in Sources */,
+				2AB74BFF26EA68DD00B0D10F /* FontExtension.swift in Sources */,
+				2AB74BFE26EA68DD00B0D10F /* DeviceExtension.swift in Sources */,
+				2AB74C0026EA68DD00B0D10F /* ArrayExtension.swift in Sources */,
+				2ADD1C6627869CBA001ABC3B /* AppointmentModel.swift in Sources */,
+				2AB74C0D26EA68DD00B0D10F /* CalendarDayCell.swift in Sources */,
+				2AB74C0A26EA68DD00B0D10F /* CalendarFlowLayout.swift in Sources */,
+				2AACF6972786C0120059F80C /* ServiceTypeHeaderCell.swift in Sources */,
+				2A3827AE270735B8002F1932 /* AppointmentDurationTableViewCell.swift in Sources */,
+				2A3827A82704B0C3002F1932 /* UpcomingServicesCollectionViewCell.swift in Sources */,
+				2A32E7752778894900F21BFE /* LeaveModel.swift in Sources */,
+				2AB74C0B26EA68DD00B0D10F /* CalendarHeaderView.swift in Sources */,
+				2AB74CBA26EA68DE00B0D10F /* STPopupLeftBarItem.m in Sources */,
+				2A3827AB2707341E002F1932 /* AppointmentsViewController.swift in Sources */,
+				2AB74C0626EA68DD00B0D10F /* StringExtension.swift in Sources */,
+				2A52B3A4278AB595000A9C9C /* ServiceConfigurationViewController.swift in Sources */,
+				2AB74C8A26EA68DD00B0D10F /* CTCustomButton.swift in Sources */,
+				2A32E779277889BF00F21BFE /* LeaveServiceHelper.swift in Sources */,
+				2ADD1C6A27869CF5001ABC3B /* AppointmentServiceHelper.swift in Sources */,
+				2AB74CBB26EA68DE00B0D10F /* UIViewController+STPopup.m in Sources */,
+				2A32E7772778899000F21BFE /* LeaveServiceManager.swift in Sources */,
+				2AB74C0226EA68DD00B0D10F /* DesignableView.swift in Sources */,
+				2A32E77F277C26D600F21BFE /* DesignFunctions.swift in Sources */,
+				2A32E78D277C7C0000F21BFE /* CleanerServiceManager.swift in Sources */,
+				2A5FBA12270DB4DA00594D7B /* ProfileViewController.swift in Sources */,
+				2AB74C7026EA68DD00B0D10F /* CustomPicker.swift in Sources */,
+				2AEB7BEF278FEF32000941BD /* AvailableCleanerViewController.swift in Sources */,
+				2AB74C0426EA68DD00B0D10F /* ViewExtension.swift in Sources */,
+				2A32E78B277C7B5700F21BFE /* CleanerModel.swift in Sources */,
+				2AEDE73626E8C766004D0ABB /* ForgetPasswordViewController.swift in Sources */,
+				2A32E771277873D600F21BFE /* ProfileServiceHelper.swift in Sources */,
+				2AB74C0926EA68DD00B0D10F /* TableViewExtension.swift in Sources */,
+				2AB74BFD26EA68DD00B0D10F /* StackViewExtension.swift in Sources */,
+				2ADD1C6827869CD3001ABC3B /* AppointmentServiceManager.swift in Sources */,
+				2A65D65727156BC100D15E6C /* LeaveStatusViewController.swift in Sources */,
+				2AACF6942786BF100059F80C /* AppointmentDetailViewController.swift in Sources */,
+				2AB9FDF926EBEF740022EE74 /* MobileNoVerificationViewController.swift in Sources */,
+				2A47E86826E2371000FDABF0 /* LoginViewController.swift in Sources */,
+				2AD68CB22774A27000020DB2 /* LoginViewModel.swift in Sources */,
+				2A32E76D2778735D00F21BFE /* ProfileModel.swift in Sources */,
+				2AB74C8426EA68DD00B0D10F /* AttachmentView.swift in Sources */,
+				2AB74C1226EA68DD00B0D10F /* CalendarView.swift in Sources */,
+				2AB74C8526EA68DD00B0D10F /* CTSegmentControl.swift in Sources */,
+				2AB74C8B26EA68DD00B0D10F /* CTButton.swift in Sources */,
+				2AD68CAC2774A23900020DB2 /* UserDetails.swift in Sources */,
+				2AB74C1026EA68DD00B0D10F /* EventsManager.swift in Sources */,
+				2AB74CB926EA68DE00B0D10F /* STPopupNavigationBar.m in Sources */,
+				2A47E86426E2371000FDABF0 /* AppDelegate.swift in Sources */,
+				2A52B3AE278DA068000A9C9C /* AppointmentManager.swift in Sources */,
+				2AB74C0726EA68DD00B0D10F /* TextfieldExtension.swift in Sources */,
+				2AB74CCC26EA68DE00B0D10F /* ServiceHelper.swift in Sources */,
+				2AB74C0F26EA68DD00B0D10F /* CalendarView+Delegate.swift in Sources */,
+				2AB74C8E26EA68DD00B0D10F /* CTStepper.swift in Sources */,
+				2A47E86626E2371000FDABF0 /* SceneDelegate.swift in Sources */,
+				2AB9FDD426EB233E0022EE74 /* DashboardViewController.swift in Sources */,
+				2AB74BEB26EA68DD00B0D10F /* Constants.swift in Sources */,
+				2A32E773277873EA00F21BFE /* ProfileViewModel.swift in Sources */,
+				2A47E86E26E2371000FDABF0 /* EcoCarWash.xcdatamodeld in Sources */,
+				2AB74C8826EA68DD00B0D10F /* CTDayWeekCalender.swift in Sources */,
+				2AB74CB426EA68DE00B0D10F /* UITableViewCell+CellShadows.m in Sources */,
+				2A32E785277C2E2C00F21BFE /* CleanerCell.swift in Sources */,
+				2A3827B227073734002F1932 /* AppointmentTableViewCell.swift in Sources */,
+				2AB9FDDA26EB69A70022EE74 /* TutorialViewController.swift in Sources */,
+				2A5FBA14270DEA2500594D7B /* LeaveApplicationViewController.swift in Sources */,
+				2A65D65027155FC600D15E6C /* LeaveApplicationHeaderView.swift in Sources */,
+				2AB74C8726EA68DD00B0D10F /* CTDayCalender.swift in Sources */,
+				2A31838B277DA7DE003319D1 /* CreateCleanerViewController.swift in Sources */,
+				2ADD1C6C27869D0B001ABC3B /* AppointmentViewModel.swift in Sources */,
+				2AB74C0526EA68DD00B0D10F /* ColorExtension.swift in Sources */,
+				2AB74C8326EA68DD00B0D10F /* KDCircularProgress.swift in Sources */,
+				2A52B3A8278AB5D2000A9C9C /* ServiceTableViewCell.swift in Sources */,
+				2A52B3AC278ABD22000A9C9C /* ServiceTypeViewController.swift in Sources */,
+				2AB74C0C26EA68DD00B0D10F /* CalendarView+Extensions.swift in Sources */,
+				2A49BBF4270F1BF100C61CE8 /* AppliedLeavesTableViewCell.swift in Sources */,
+				2AB9FDD826EB26790022EE74 /* MenuViewController.swift in Sources */,
+				2AB74C0126EA68DD00B0D10F /* ImageExtension.swift in Sources */,
+				2AB74C8C26EA68DD00B0D10F /* CTView.swift in Sources */,
+				2AB74CB526EA68DE00B0D10F /* Rechability.swift in Sources */,
+				2AB74BE826EA68DD00B0D10F /* UserManager.swift in Sources */,
+				2A59146D27A1373600A59C5E /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A47E87526E2371400FDABF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A47E87E26E2371400FDABF0 /* EcoCarWashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A47E88026E2371400FDABF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A47E88926E2371400FDABF0 /* EcoCarWashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A47E87B26E2371400FDABF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A47E85F26E2371000FDABF0 /* Eco carwash Service */;
+			targetProxy = 2A47E87A26E2371400FDABF0 /* PBXContainerItemProxy */;
+		};
+		2A47E88626E2371400FDABF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A47E85F26E2371000FDABF0 /* Eco carwash Service */;
+			targetProxy = 2A47E88526E2371400FDABF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A47E86926E2371000FDABF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A47E86A26E2371000FDABF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A47E87126E2371300FDABF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A47E87226E2371300FDABF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A47E88B26E2371400FDABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A47E88C26E2371400FDABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A47E88E26E2371400FDABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B3ED2EB011B2197E06522FA /* Pods-Eco carwash Service.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P32DM53654;
+				INFOPLIST_FILE = EcoCarWash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eternosoft.ecocarwashservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EcoCarWash/EcoCarWash-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A47E88F26E2371400FDABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D1B011362A2ABA6CFA2E12F /* Pods-Eco carwash Service.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P32DM53654;
+				INFOPLIST_FILE = EcoCarWash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eternosoft.ecocarwashservice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EcoCarWash/EcoCarWash-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A47E89126E2371400FDABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B656821F7166A8A1294330C /* Pods-Eco carwash ServiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoCarWashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.EcoCarWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eco carwash Service.app/Eco carwash Service";
+			};
+			name = Debug;
+		};
+		2A47E89226E2371400FDABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8182124C0296623474935E8 /* Pods-Eco carwash ServiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoCarWashTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.EcoCarWashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eco carwash Service.app/Eco carwash Service";
+			};
+			name = Release;
+		};
+		2A47E89426E2371400FDABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27246EEF57C8730DDC8A55F /* Pods-Eco carwash Service-Eco carwash ServiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoCarWashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.EcoCarWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EcoCarWash;
+			};
+			name = Debug;
+		};
+		2A47E89526E2371400FDABF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB6378CD9B2AD27C9B98DF3 /* Pods-Eco carwash Service-Eco carwash ServiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EcoCarWashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.EcoCarWashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EcoCarWash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A47E85B26E2371000FDABF0 /* Build configuration list for PBXProject "Eco carwash Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A47E88B26E2371400FDABF0 /* Debug */,
+				2A47E88C26E2371400FDABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A47E88D26E2371400FDABF0 /* Build configuration list for PBXNativeTarget "Eco carwash Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A47E88E26E2371400FDABF0 /* Debug */,
+				2A47E88F26E2371400FDABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A47E89026E2371400FDABF0 /* Build configuration list for PBXNativeTarget "Eco carwash ServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A47E89126E2371400FDABF0 /* Debug */,
+				2A47E89226E2371400FDABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A47E89326E2371400FDABF0 /* Build configuration list for PBXNativeTarget "Eco carwash ServiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A47E89426E2371400FDABF0 /* Debug */,
+				2A47E89526E2371400FDABF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A47E86C26E2371000FDABF0 /* EcoCarWash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A47E86D26E2371000FDABF0 /* EcoCarWash.xcdatamodel */,
+			);
+			currentVersion = 2A47E86D26E2371000FDABF0 /* EcoCarWash.xcdatamodel */;
+			path = EcoCarWash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2A47E85826E2371000FDABF0 /* Project object */;
+}

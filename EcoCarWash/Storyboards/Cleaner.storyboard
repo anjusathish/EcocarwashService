@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Cleaner List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CleanerListViewController" id="Y6W-OH-hqX" customClass="CleanerListViewController" customModule="Eco_carwash_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehy-gf-CvY">
+                                <rect key="frame" x="20" y="50" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ift-UQ-Ldf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Back" title="   Cleaner list">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Wyj-iQ-uHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez9-YZ-7rk" customClass="IBButtonClass" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                <rect key="frame" x="20" y="100" width="335" height="45"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="v5k-53-Vpl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="    Create new">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ShadowObjColor">
+                                        <color key="value" name="GrayColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ShadowObjColor">
+                                        <color key="value" name="DefaultBlack"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="ShadowShadOff">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ShadowShadOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addCleanerBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nul-rd-ENQ"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6te-bh-Xgb">
+                                <rect key="frame" x="0.0" y="155" width="375" height="492"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="ce9-8i-jfC"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="KGr-No-31C"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ez9-YZ-7rk" firstAttribute="top" secondItem="ehy-gf-CvY" secondAttribute="bottom" constant="20" id="F4i-bi-8Le"/>
+                            <constraint firstItem="Ez9-YZ-7rk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Pdc-Kl-0fq"/>
+                            <constraint firstItem="ehy-gf-CvY" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="QAC-I1-NHL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6te-bh-Xgb" secondAttribute="bottom" constant="20" id="bA1-as-6b1"/>
+                            <constraint firstItem="ehy-gf-CvY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="50" id="g3s-k6-eY6"/>
+                            <constraint firstItem="6te-bh-Xgb" firstAttribute="top" secondItem="Ez9-YZ-7rk" secondAttribute="bottom" constant="10" id="haJ-RZ-EVi"/>
+                            <constraint firstItem="6te-bh-Xgb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="iO5-BX-9iQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6te-bh-Xgb" secondAttribute="trailing" id="jeM-Zy-LyW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ez9-YZ-7rk" secondAttribute="trailing" constant="20" id="rfW-1T-AgJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="6te-bh-Xgb" id="qdB-fD-PGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="78"/>
+        </scene>
+        <!--Create Cleaner View Controller-->
+        <scene sceneID="l1h-TB-fDa">
+            <objects>
+                <viewController storyboardIdentifier="CreateCleanerViewController" id="a6O-MK-niZ" customClass="CreateCleanerViewController" customModule="Eco_carwash_Service" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lOP-YI-Dh0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPo-yT-5s9">
+                                <rect key="frame" x="10" y="50" width="212.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C8o-NK-twU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Back" title="   Create Cleaner">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backBtn:" destination="a6O-MK-niZ" eventType="touchUpInside" id="GLv-ay-HIT"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kPz-Os-BKZ">
+                                <rect key="frame" x="0.0" y="100" width="375" height="370"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="VeF-hb-zsp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="295"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9wU-hV-3qJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toW-kG-NhK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="Yb5-bI-8PP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="textColor" name="GrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WxS-Af-qun" customClass="CTTextField" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25" width="375" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="HFe-ai-rY1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MY4-fG-huJ">
+                                                <rect key="frame" x="0.0" y="80" width="375" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-In-6yE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="Q4C-LD-h6M"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="textColor" name="GrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAI-wK-IWZ" customClass="CTTextField" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25" width="375" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Xbr-KS-eh2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m22-ch-9nI">
+                                                <rect key="frame" x="0.0" y="147.5" width="375" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xz1-1d-8ck">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="ia8-p4-Ehz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="textColor" name="GrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gju-Fj-TO7" customClass="CTTextField" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25" width="375" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="WU4-dg-EPm"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dd9-Ii-M7r">
+                                                <rect key="frame" x="0.0" y="160" width="375" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4N-0z-WDP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="mDe-po-ppD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="textColor" name="GrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hC-Hk-Ixs" customClass="CTTextField" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25" width="375" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="V1B-Ni-Ohw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yLT-9p-6F2">
+                                                <rect key="frame" x="0.0" y="240" width="200" height="55"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      Date of joining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-gu-Bff">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="vJm-Nn-x55"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <color key="textColor" name="GrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XI5-kU-fTL" customClass="CTTextField" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="25" width="200" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="aTn-9q-gcz"/>
+                                                            <constraint firstAttribute="height" constant="30" id="avI-nX-KF0"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="Calendar"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="a6O-MK-niZ" id="KiW-Xr-ESu"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="MY4-fG-huJ" secondAttribute="trailing" id="WDt-h0-a4G"/>
+                                            <constraint firstItem="9wU-hV-3qJ" firstAttribute="leading" secondItem="VeF-hb-zsp" secondAttribute="leading" id="aPc-IO-w0x"/>
+                                            <constraint firstItem="dd9-Ii-M7r" firstAttribute="leading" secondItem="VeF-hb-zsp" secondAttribute="leading" id="iBA-OW-TC1"/>
+                                            <constraint firstAttribute="trailing" secondItem="m22-ch-9nI" secondAttribute="trailing" id="jHI-cK-upy"/>
+                                            <constraint firstAttribute="trailing" secondItem="9wU-hV-3qJ" secondAttribute="trailing" id="kSR-bv-znN"/>
+                                            <constraint firstAttribute="trailing" secondItem="dd9-Ii-M7r" secondAttribute="trailing" id="lNv-WA-Isb"/>
+                                            <constraint firstItem="m22-ch-9nI" firstAttribute="leading" secondItem="VeF-hb-zsp" secondAttribute="leading" id="vpU-Ti-U4d"/>
+                                            <constraint firstItem="MY4-fG-huJ" firstAttribute="leading" secondItem="VeF-hb-zsp" secondAttribute="leading" id="zTy-UR-o6N"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="a0g-oa-G6i">
+                                        <rect key="frame" x="0.0" y="325" width="288" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      Documents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOC-Td-6ph">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="45"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-vC-YfO" customClass="IBButtonClass" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                                <rect key="frame" x="113" y="0.0" width="175" height="45"/>
+                                                <color key="backgroundColor" name="SecondaryColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="175" id="52u-Z1-MbT"/>
+                                                    <constraint firstAttribute="height" constant="45" id="kun-YG-s4c"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Upload">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="baseForegroundColor" name="MainColor"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ShadowObjColor">
+                                                        <color key="value" name="GrayColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="ShadowObjColor">
+                                                        <color key="value" name="DefaultBlack"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="ShadowShadOff">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="ShadowShadOpacity">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="uploadDocumentBtn:" destination="a6O-MK-niZ" eventType="touchUpInside" id="VeI-qu-pw9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VeF-hb-zsp" secondAttribute="trailing" id="ghB-2o-dWM"/>
+                                    <constraint firstItem="VeF-hb-zsp" firstAttribute="leading" secondItem="kPz-Os-BKZ" secondAttribute="leading" id="hMT-CC-E2D"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-2w-TML" customClass="IBButtonClass" customModule="Eco_carwash_Service" customModuleProvider="target">
+                                <rect key="frame" x="20" y="500" width="335" height="45"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bSC-34-c1m"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ShadowObjColor">
+                                        <color key="value" name="GrayColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ShadowObjColor">
+                                        <color key="value" name="DefaultBlack"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="ShadowShadOff">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ShadowShadOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createBtn:" destination="a6O-MK-niZ" eventType="touchUpInside" id="e49-Fl-UbD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qlK-GI-ed5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qlK-GI-ed5" firstAttribute="trailing" secondItem="OgN-2w-TML" secondAttribute="trailing" constant="20" id="05A-aq-n9M"/>
+                            <constraint firstItem="nPo-yT-5s9" firstAttribute="leading" secondItem="qlK-GI-ed5" secondAttribute="leading" constant="10" id="CFy-lL-Rt6"/>
+                            <constraint firstItem="OgN-2w-TML" firstAttribute="leading" secondItem="qlK-GI-ed5" secondAttribute="leading" constant="20" id="CZq-7B-EKt"/>
+                            <constraint firstItem="kPz-Os-BKZ" firstAttribute="leading" secondItem="qlK-GI-ed5" secondAttribute="leading" id="YFv-J3-Lnh"/>
+                            <constraint firstItem="kPz-Os-BKZ" firstAttribute="top" secondItem="nPo-yT-5s9" secondAttribute="bottom" constant="20" id="Zeu-wS-Gx0"/>
+                            <constraint firstItem="qlK-GI-ed5" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OgN-2w-TML" secondAttribute="bottom" constant="20" id="atW-hs-CiS"/>
+                            <constraint firstItem="nPo-yT-5s9" firstAttribute="top" secondItem="lOP-YI-Dh0" secondAttribute="top" constant="50" id="hZf-0c-XT4"/>
+                            <constraint firstItem="qlK-GI-ed5" firstAttribute="trailing" secondItem="kPz-Os-BKZ" secondAttribute="trailing" id="k7D-X7-ajt"/>
+                            <constraint firstItem="OgN-2w-TML" firstAttribute="top" secondItem="kPz-Os-BKZ" secondAttribute="bottom" constant="30" id="oFv-nE-Qcd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CiK-nD-c93"/>
+                    <connections>
+                        <outlet property="docuemntNameLbl" destination="vOC-Td-6ph" id="jfR-Mt-dPr"/>
+                        <outlet property="emailTF" destination="eAI-wK-IWZ" id="Oea-92-Nhw"/>
+                        <outlet property="joiningDateTF" destination="XI5-kU-fTL" id="EXj-Fv-V8h"/>
+                        <outlet property="nameTF" destination="WxS-Af-qun" id="RpN-al-zq3"/>
+                        <outlet property="passwordTF" destination="gju-Fj-TO7" id="iqa-3b-ohE"/>
+                        <outlet property="phoneNoTF" destination="5hC-Hk-Ixs" id="n3g-FL-UkF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbc-FZ-kCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="5hC-Hk-Ixs">
+            <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+        <designable name="Ez9-YZ-7rk">
+            <size key="intrinsicContentSize" width="143.5" height="33.5"/>
+        </designable>
+        <designable name="OgN-2w-TML">
+            <size key="intrinsicContentSize" width="76" height="34.5"/>
+        </designable>
+        <designable name="WxS-Af-qun">
+            <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+        <designable name="XI5-kU-fTL">
+            <size key="intrinsicContentSize" width="41" height="18.5"/>
+        </designable>
+        <designable name="eAI-wK-IWZ">
+            <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+        <designable name="gju-Fj-TO7">
+            <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+        <designable name="hGL-vC-YfO">
+            <size key="intrinsicContentSize" width="77.5" height="33.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Back" width="8" height="14"/>
+        <image name="Calendar" width="20" height="22"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="DefaultBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayColor">
+            <color red="0.70588235294117652" green="0.70588235294117652" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.015686274509803921" green="0.16078431372549021" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="0.42699998617172241" green="0.875" blue="0.84799998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
